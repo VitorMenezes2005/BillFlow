@@ -5,6 +5,8 @@
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Uma IDE de sua preferência (recomendado: [IntelliJ IDEA](https://www.jetbrains.com/idea/))
 - [Postman](https://www.postman.com/downloads/)
+- Uma chave de API criada no [Google AI Studio](https://aistudio.google.com/apikey), que deve ser colocada na variável `GEMINI_API_KEY`
+  > O modelo de LLM fica a sua escolha (variável `GEMINI_MODEL`). Recomendo o `gemini-2.5-flash-lite`.
 
 ## Instalando a Evolution API
 
@@ -78,3 +80,15 @@ O restante do prompt já define o comportamento e pode ser usado como está:
 - **Fora do contexto:** perguntas sobre outros assuntos são recusadas.
 
 Se quiser, você pode adaptar essas regras, por exemplo adicionando outros termos que indiquem pagamento pendente.
+
+## Configuração de requisição via Postman
+
+No Postman, crie uma requisição com o método **POST** e, no campo da rota HTTP, escreva:
+
+```
+http://localhost:8081/api/ai
+```
+
+Na aba **Headers**, inclua as informações conforme a imagem abaixo:
+
+<img src="docs/images/postman-headers.png" alt="Headers da requisição no Postman" width="750"/>
