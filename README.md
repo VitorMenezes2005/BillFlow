@@ -89,6 +89,18 @@ No Postman, crie uma requisição com o método **POST** e, no campo da rota HTT
 http://localhost:8081/api/ai
 ```
 
-Na aba **Headers**, inclua as informações conforme a imagem abaixo:
+Na aba **Headers**, clique em **Bulk Edit** e cole:
+
+```
+Content-Type: text/plain
+User-Agent: PostmanRuntime/7.51.1
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+```
+
+Os headers `Postman-Token`, `Content-Length` e `Host` são calculados pelo próprio Postman quando a requisição é enviada, então não precisam ser preenchidos.
+
+Exemplo de como deve ficar:
 
 <img src="docs/images/postman-headers.png" alt="Headers da requisição no Postman" width="750"/>
