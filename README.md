@@ -160,3 +160,11 @@ Exemplo de como deve ficar:
 > **Importante:** você precisa ter os contatos que serão cobrados salvos no seu WhatsApp.
 
 Fique à vontade caso queira mexer na estrutura de envio das mensagens: ela fica na classe `ToolsServiceImpl` (`src/main/java/com/billflow/service/impl/ToolsServiceImpl.java`).
+
+## Considerações Finais
+
+> ⚠️ **Atenção:** use com moderação. A Evolution API **não é uma API oficial do WhatsApp**. Se o disparo de mensagens for excessivo, o WhatsApp pode suspender o número responsável pelos envios.
+
+Caso queira entrar em contato: **vitorcarlos2005@outlook.com**
+
+Obrigado por usar o BillFlow! Espero que ele ajude a simplificar as suas cobranças.
