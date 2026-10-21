@@ -138,3 +138,25 @@ Os headers `Postman-Token`, `Content-Length` e `Host` são calculados pelo próp
 Exemplo de como deve ficar:
 
 <img src="docs/images/postman-headers.png" alt="Headers da requisição no Postman" width="750"/>
+
+## Como usar
+
+1. Alimente uma planilha com as seguintes colunas:
+   - **Nome**
+   - **Número de telefone:** sem nenhum caractere especial, com o código do país + DDD (exemplo: `5511999999999`)
+   - **Valor a ser pago**
+   - **Data da compra**
+   - **Status:** sempre marcado como `PENDENTE`. É com essa informação que a LLM entende para quais números enviar as mensagens de cobrança, caso você não queira filtrar quem está ou não pendente.
+2. Baixe a planilha em `.csv`, copie o conteúdo desse arquivo e cole no campo **Body** da requisição no Postman (opção **raw**, tipo **Text**), conforme a imagem:
+
+   ```
+   NOME,5511999999999,R$ 20,27/09/2026,PENDENTE
+   ```
+
+   <img src="docs/images/postman-body.png" alt="Body da requisição no Postman" width="750"/>
+
+3. Com o Docker em execução, o WhatsApp Web conectado via Evolution API e a aplicação Java Spring rodando, basta clicar em **Send** para o BillFlow entrar em ação.
+
+> **Importante:** você precisa ter os contatos que serão cobrados salvos no seu WhatsApp.
+
+Fique à vontade caso queira mexer na estrutura de envio das mensagens: ela fica na classe `ToolsServiceImpl` (`src/main/java/com/billflow/service/impl/ToolsServiceImpl.java`).
