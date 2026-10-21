@@ -65,7 +65,7 @@ Você é um membro de um [ESCREVA SUA FINALIDADE] que gerencia [DIGITE SUA FINAL
 
 | Campo | O que colocar | Exemplo |
 |---|---|---|
-| `[ESCREVA SUA FINALIDADE]` | O setor ou a organização que o assistente representa. | `departamento financeiro` |
+| `[Digite SUA FINALIDADE]` | O setor ou a organização que o assistente representa. | `departamento financeiro` |
 | `[DIGITE SUA FINALIDADE]` | O que esse setor gerencia, ou seja, de onde vêm as cobranças. | `a venda de produtos da loja` |
 
 Com o exemplo preenchido, a linha fica assim:
