@@ -10,7 +10,7 @@
 
 O BillFlow envia as mensagens pelo WhatsApp usando a Evolution API. Para rodá-la com Docker, baixe o pacote [`setup/n8n-evo-docker-starter-main-guerra.rar`](setup/n8n-evo-docker-starter-main-guerra.rar) e siga os passos abaixo.
 
-> O pacote é baseado no template [n8n-evo-docker-starter](https://github.com/rgvieiraoficial/n8n-evo-docker-starter), criado por **Guerra721**.
+> O pacote é baseado no template [war721/N8N](https://github.com/war721/N8N/tree/main/n8n), criado por **Guerra721**.
 
 1. Descompacte o arquivo no gerenciador de arquivos.
 2. No VS Code, clique em **File → Open Folder** e abra a pasta descompactada.
