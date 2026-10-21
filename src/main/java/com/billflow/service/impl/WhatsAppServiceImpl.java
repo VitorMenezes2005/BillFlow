@@ -11,11 +11,10 @@ public class WhatsAppServiceImpl {
     private final String instance;
 
     public WhatsAppServiceImpl(WebClient.Builder builder,
-                               @Value("${whatsapp.base-url}") String baseUrl,
                                @Value("${whatsapp.api-key}") String apiKey,
                                @Value("${whatsapp.instance}") String instance) {
         this.webClient = builder
-                .baseUrl(baseUrl)
+                .baseUrl("http://localhost:8080")
                 .defaultHeader("Content-Type", "application/json")
                 .defaultHeader("apikey", apiKey)
                 .build();
