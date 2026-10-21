@@ -60,11 +60,34 @@ Depois de realizar o cadastro na Evolution API e ter acesso ao restante do site,
 
 ## Configurando o `.env`
 
-Copie o arquivo de exemplo e preencha com os seus valores:
+O `.env` é o arquivo onde ficam os valores das variáveis de ambiente do BillFlow. Ele é lido automaticamente quando a aplicação sobe e não é enviado para o GitHub, então as suas chaves ficam só no seu computador.
 
-```bash
-cp .env.example .env
-```
+> **Atenção:** este `.env` é o do **BillFlow**, na raiz do projeto clonado. Ele é diferente do `.env` da Evolution API, configurado na pasta descompactada.
+
+1. Na raiz do projeto BillFlow, crie uma cópia do arquivo `.env.example` e renomeie a cópia para `.env`. Se preferir, use o terminal:
+   ```bash
+   cp .env.example .env
+   ```
+2. Abra o `.env` e preencha cada variável:
+
+   | Variável | Onde conseguir o valor |
+   |---|---|
+   | `GEMINI_API_KEY` | A chave criada no Google AI Studio (veja os [Pré-requisitos](#pré-requisitos)). |
+   | `GEMINI_MODEL` | O modelo do Gemini que você escolheu. Exemplo: `gemini-2.5-flash-lite`. |
+   | `SERVER_PORT` | A porta do BillFlow. Use `8081`, porque a `8080` já é usada pela Evolution API. |
+   | `WHATSAPP_API_KEY` | O token da instância (veja [Criar instância na Evolution API](#criar-instância-na-evolution-api)). |
+   | `WHATSAPP_INSTANCE` | O nome da instância criada na Evolution API. |
+
+3. Salve o arquivo. O resultado deve ficar parecido com este:
+   ```
+   GEMINI_API_KEY=sua-chave-do-google-ai-studio
+   GEMINI_MODEL=gemini-2.5-flash-lite
+   SERVER_PORT=8081
+   WHATSAPP_API_KEY=token-da-sua-instancia
+   WHATSAPP_INSTANCE=nome-da-sua-instancia
+   ```
+
+> Não use aspas nem espaços ao redor do `=`.
 
 ## Configurando o `AiService`
 
