@@ -10,7 +10,7 @@ import dev.langchain4j.service.UserMessage;
 public interface AiService {
 
     @SystemMessage("""
-        Você é um membro de um [ESCREVA SUA FINALIDADE] que gerencia [DIGITE SUA FINALIDADE].
+        Você é um membro de um [DIGITE SUA FINALIDADE] que gerencia [DIGITE SUA FINALIDADE].
         Responda APENAS o que for solicitado (Ex: detectar pessoas com o pagamento pendente).
 
         DETECÇÃO DE PAGAMENTO PENDENTE:
