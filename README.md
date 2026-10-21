@@ -8,6 +8,16 @@
 - Uma chave de API criada no [Google AI Studio](https://aistudio.google.com/apikey), que deve ser colocada na variável `GEMINI_API_KEY`
   > O modelo de LLM fica a sua escolha (variável `GEMINI_MODEL`). Recomendo o `gemini-2.5-flash-lite`.
 
+## Variáveis de ambiente
+
+| Variável | Obrigatória | Exemplo | Função |
+|---|---|---|---|
+| `GEMINI_API_KEY` | sim | — | Chave da API do Google Gemini, usada pelo modelo de IA. |
+| `GEMINI_MODEL` | sim | `gemini-2.5-flash-lite` | Nome do modelo do Gemini usado. |
+| `SERVER_PORT` | sim | `8081` | Porta HTTP em que a aplicação sobe. |
+| `WHATSAPP_API_KEY` | sim | — | Token da instância criada na Evolution API (gerado ao clicar em **Instance +**). |
+| `WHATSAPP_INSTANCE` | sim | — | Nome da instância criada na Evolution API. |
+
 ## Instalando a Evolution API
 
 O BillFlow envia as mensagens pelo WhatsApp usando a Evolution API. Para rodá-la com Docker, baixe o pacote [`setup/n8n-evo-docker-starter-main-guerra.rar`](setup/n8n-evo-docker-starter-main-guerra.rar) e siga os passos abaixo.
@@ -36,16 +46,6 @@ Depois de realizar o cadastro na Evolution API e ter acesso ao restante do site,
 3. Use o **nome da instância** criada na variável de ambiente `WHATSAPP_INSTANCE`.
 
 > **Importante:** não esqueça de, depois de criar a instância, acessá-la e gerar o **QR Code** para se conectar com o WhatsApp Web. Sem essa conexão, as mensagens não são enviadas.
-
-## Variáveis de ambiente
-
-| Variável | Obrigatória | Exemplo | Função |
-|---|---|---|---|
-| `GEMINI_API_KEY` | sim | — | Chave da API do Google Gemini, usada pelo modelo de IA. |
-| `GEMINI_MODEL` | sim | `gemini-2.5-flash-lite` | Nome do modelo do Gemini usado. |
-| `SERVER_PORT` | sim | `8081` | Porta HTTP em que a aplicação sobe. |
-| `WHATSAPP_API_KEY` | sim | — | Token da instância criada na Evolution API (gerado ao clicar em **Instance +**). |
-| `WHATSAPP_INSTANCE` | sim | — | Nome da instância criada na Evolution API. |
 
 ## Configurando o `.env`
 
