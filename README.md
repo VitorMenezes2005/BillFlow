@@ -60,7 +60,7 @@ cp .env.example .env
 O prompt do assistente fica em `src/main/java/com/billflow/service/AiService.java`, na anotação `@SystemMessage`. A primeira linha tem dois campos que você precisa preencher com o contexto do seu uso:
 
 ```
-Você é um membro de um [ESCREVA SUA FINALIDADE] que gerencia [DIGITE SUA FINALIDADE].
+Você é um membro de um [DIGITE SUA FINALIDADE] que gerencia [DIGITE SUA FINALIDADE].
 ```
 
 | Campo | O que colocar | Exemplo |
