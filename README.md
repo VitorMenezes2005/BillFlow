@@ -4,6 +4,7 @@
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Uma IDE de sua preferência (recomendado: [IntelliJ IDEA](https://www.jetbrains.com/idea/))
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [Postman](https://www.postman.com/downloads/)
 - Uma chave de API criada no [Google AI Studio](https://aistudio.google.com/apikey), que deve ser colocada na variável `GEMINI_API_KEY`
   > O modelo de LLM fica a sua escolha (variável `GEMINI_MODEL`). Recomendo o `gemini-2.5-flash-lite`.
