@@ -9,6 +9,16 @@
 - Uma chave de API criada no [Google AI Studio](https://aistudio.google.com/apikey), que deve ser colocada na variável `GEMINI_API_KEY`
   > O modelo de LLM fica a sua escolha (variável `GEMINI_MODEL`). Recomendo o `gemini-2.5-flash-lite`.
 
+## Clonando o repositório
+
+O primeiro passo é baixar o código do BillFlow para o seu computador. Para isso, abra um terminal na pasta onde deseja salvar o projeto e rode o comando abaixo (é necessário ter o [Git](https://git-scm.com/downloads) instalado):
+
+```bash
+git clone https://github.com/VitorMenezes2005/BillFlow-.git
+```
+
+Depois, abra a pasta `BillFlow-` criada pelo comando na sua IDE.
+
 ## Variáveis de ambiente
 
 | Variável | Obrigatória | Exemplo | Função |
