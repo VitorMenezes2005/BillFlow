@@ -22,7 +22,7 @@ O BillFlow envia as mensagens pelo WhatsApp usando a Evolution API. Para rodá-l
    docker compose up -d
    ```
 6. Espere o download de todas as imagens e abra o Docker Desktop.
-7. No Docker Desktop, entre na aba **Containers** e clique na porta do `evolution_api`. Depois que a porta abrir, copie o endereço HTTP e cole no navegador em que a porta foi aberta.
+7. No Docker Desktop, entre na aba **Containers** e clique na porta do `evolution_api`. Depois que a porta abrir, copie o endereço HTTP e cole no navegador em que a porta foi aberta (exemplo: `http://localhost:8080/manager`).
 8. Por fim, realize o cadastro.
 
 A chave que você colocou em `AUTHENTICATION_API_KEY` é o valor de `WHATSAPP_API_KEY` no BillFlow, e o endereço da Evolution API (por padrão `http://localhost:8080`) é o `WHATSAPP_BASE_URL`.
