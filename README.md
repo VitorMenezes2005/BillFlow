@@ -46,11 +46,11 @@ O BillFlow envia as mensagens pelo WhatsApp usando a Evolution API. Para rodá-l
    ```
 6. Espere o download de todas as imagens e abra o Docker Desktop.
 7. No Docker Desktop, entre na aba **Containers** e clique na porta do `evolution_api`. Depois que a porta abrir, copie o endereço HTTP e cole no navegador em que a porta foi aberta (exemplo: `http://localhost:8080/manager`).
-8. Por fim, realize o cadastro.
+8. Por fim, faça login no site usando a chave que você colocou em `AUTHENTICATION_API_KEY` no passo 4 (a chave gerada com a ajuda da IA).
 
 ## Criar instância na Evolution API
 
-Depois de realizar o cadastro na Evolution API e ter acesso ao restante do site, é necessário criar uma instância nova:
+Depois de fazer login na Evolution API com a sua `AUTHENTICATION_API_KEY` e ter acesso ao restante do site, é necessário criar uma instância nova:
 
 1. Clique em **Instance +** para criar a instância.
 2. Copie o **token** gerado na criação da instância e use esse valor na variável de ambiente `WHATSAPP_API_KEY`.
